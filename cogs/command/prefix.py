@@ -8,7 +8,7 @@ class Prefix(Cog_Base):
     @commands.command()
     async def adam(self, ctx: commands.Context):
         await ctx.message.delete()
-        await ctx.send("adam")
+        await ctx.send("<@600944086110830593> 閉嘴")
         return
 
 
