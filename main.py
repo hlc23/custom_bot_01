@@ -21,6 +21,11 @@ async def adam(ctx: CTX):
     return
 
 @bot.command()
+async def ping(ctx: CTX):
+    await ctx.send('pong')
+    return
+
+@bot.command()
 async def shutup(ctx: CTX, target: discord.Member):
     await ctx.message.delete()
     try:
@@ -33,5 +38,5 @@ async def shutup(ctx: CTX, target: discord.Member):
 async def on_ready():
     print('Bot is ready')
     return
-    
+
 bot.run(os.getenv('TOKEN'))
